@@ -10,7 +10,7 @@ import Foundation
 
 extension Array {
     
-    /// MARK: Subscript
+    // MARK: Subscript
     
     // Get or set the elements of the given indexes.
     subscript(indexes: [Int]) -> [T] {
@@ -36,7 +36,7 @@ extension Array {
         }
     }
     
-    /// MARK: Mutation
+    // MARK: Mutation
     
     /**
         Removes the elements at the given indexes and returns them.
