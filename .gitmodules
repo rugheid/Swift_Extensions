@@ -1,0 +1,3 @@
+[submodule "Euler"]
+	path = Euler
+	url = https://github.com/mattt/Euler.git
