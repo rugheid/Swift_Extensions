@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
     
-    /// MARK: Subscript
+    // MARK: Subscript
     
     // Get a string of a single character from the given index.
     subscript(index: Int) -> String {
@@ -34,23 +34,44 @@ extension String {
     // Get a substring from the given range.
     subscript(range: Range<Int>) -> String {
         
-        var start = advance(startIndex, range.startIndex)
-        var end = advance(startIndex, range.endIndex)
+        get {
+            
+            let start = advance(startIndex, range.startIndex)
+            let end = advance(startIndex, range.endIndex)
+            
+            return substringWithRange(Range(start: start, end: end))
+        }
         
-        return substringWithRange(Range(start: start, end: end))
+        set {
+            
+            let start = advance(startIndex, range.startIndex)
+            let end = advance(startIndex, range.endIndex)
+            
+            self = stringByReplacingCharactersInRange(Range(start: start, end: end), withString: newValue)
+        }
     }
     
     
     // Get a string from the characters at the given indexes.
     subscript(indexes: [Int]) -> String {
         
-        let characters = Array(self)[indexes]
+        get {
+            
+            let characters = Array(self)[indexes]
+            
+            return String(characters)
+        }
         
-        return String(characters)
+        set {
+            
+            for (i, index) in enumerate(indexes) {
+                self[index] = newValue[i]
+            }
+        }
     }
     
     
-    /// MARK: Mutation
+    // MARK: Mutation
     
     /**
         Returns a new string made by removing characters contained in a given character set.
