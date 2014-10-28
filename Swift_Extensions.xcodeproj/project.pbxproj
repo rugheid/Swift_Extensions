@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983FFF4C1A003AB000DD4670 /* Euler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983FFF4B1A003AB000DD4670 /* Euler.swift */; };
 		98A3809019FFE3F30083846B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A3808D19FFE3F30083846B /* ArrayExtensions.swift */; };
 		98A3809119FFE3F30083846B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A3808D19FFE3F30083846B /* ArrayExtensions.swift */; };
 		98A3809219FFE3F30083846B /* CharacterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A3808E19FFE3F30083846B /* CharacterExtensions.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		983FFF4B1A003AB000DD4670 /* Euler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Euler.swift; sourceTree = "<group>"; };
 		98A3808D19FFE3F30083846B /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		98A3808E19FFE3F30083846B /* CharacterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterExtensions.swift; sourceTree = "<group>"; };
 		98A3808F19FFE3F30083846B /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983FFF4D1A003AB600DD4670 /* Euler */ = {
+			isa = PBXGroup;
+			children = (
+				983FFF4B1A003AB000DD4670 /* Euler.swift */,
+			);
+			name = Euler;
+			sourceTree = "<group>";
+		};
 		98C8A7A019FFE2D9008841F7 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				98C8A7AF19FFE2D9008841F7 /* Swift_Extensions.h */,
+				983FFF4D1A003AB600DD4670 /* Euler */,
 				98B5F4DD1A00122A0062116E /* Operators.swift */,
 				98A3808D19FFE3F30083846B /* ArrayExtensions.swift */,
 				98A3808E19FFE3F30083846B /* CharacterExtensions.swift */,
@@ -246,6 +257,7 @@
 				98B5F4D81A0011DC0062116E /* IntExtensions.swift in Sources */,
 				98B5F4DB1A0011FD0062116E /* DoubleExtensions.swift in Sources */,
 				98A3809019FFE3F30083846B /* ArrayExtensions.swift in Sources */,
+				983FFF4C1A003AB000DD4670 /* Euler.swift in Sources */,
 				98A3809219FFE3F30083846B /* CharacterExtensions.swift in Sources */,
 				98B5F4DE1A00122A0062116E /* Operators.swift in Sources */,
 			);
