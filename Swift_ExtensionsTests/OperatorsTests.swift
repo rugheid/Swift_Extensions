@@ -13,10 +13,18 @@ class OperatorsExtensionsTests: XCTestCase {
     
     // MARK: Power **
     
-    func testPowFunction() {
+    func testPowerOperator() {
         
         var expected = 8.0
         var result = 2.0**3.0
+        XCTAssertEqual(expected, result)
+    }
+    
+    func testPowerAssignment() {
+        
+        var expected = 8.0
+        var result = 2.0
+        result **= 3.0
         XCTAssertEqual(expected, result)
     }
     
